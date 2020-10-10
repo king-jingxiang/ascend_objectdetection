@@ -1,0 +1,13 @@
+/home/user/AscendProjects/sample-objectdetection/build/intermediates/CMakeFiles/install/strip.dir
+/home/user/AscendProjects/sample-objectdetection/build/intermediates/CMakeFiles/install/local.dir
+/home/user/AscendProjects/sample-objectdetection/build/intermediates/CMakeFiles/edit_cache.dir
+/home/user/AscendProjects/sample-objectdetection/build/intermediates/CMakeFiles/rebuild_cache.dir
+/home/user/AscendProjects/sample-objectdetection/build/intermediates/CMakeFiles/list_install_components.dir
+/home/user/AscendProjects/sample-objectdetection/build/intermediates/CMakeFiles/install.dir
+/home/user/AscendProjects/sample-objectdetection/build/intermediates/src/CMakeFiles/install/strip.dir
+/home/user/AscendProjects/sample-objectdetection/build/intermediates/src/CMakeFiles/install/local.dir
+/home/user/AscendProjects/sample-objectdetection/build/intermediates/src/CMakeFiles/main.dir
+/home/user/AscendProjects/sample-objectdetection/build/intermediates/src/CMakeFiles/edit_cache.dir
+/home/user/AscendProjects/sample-objectdetection/build/intermediates/src/CMakeFiles/rebuild_cache.dir
+/home/user/AscendProjects/sample-objectdetection/build/intermediates/src/CMakeFiles/install.dir
+/home/user/AscendProjects/sample-objectdetection/build/intermediates/src/CMakeFiles/list_install_components.dir

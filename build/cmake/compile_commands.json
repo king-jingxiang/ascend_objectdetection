@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/user/AscendProjects/sample-objectdetection/build/cmake/src",
+  "command": "/usr/bin/c++  -DENABLE_DVPP_INTERFACE -I/home/user/Ascend/ascend-toolkit/20.0.RC1/acllib_centos7.6.x86_64/acllib/include -I/home/user/AscendProjects/sample-objectdetection/src/../inc -I/home/user/ascend_ddk/x86/include/opencv4    -std=c++11 -o CMakeFiles/main.dir/utils.cpp.o -c /home/user/AscendProjects/sample-objectdetection/src/utils.cpp",
+  "file": "/home/user/AscendProjects/sample-objectdetection/src/utils.cpp"
+},
+{
+  "directory": "/home/user/AscendProjects/sample-objectdetection/build/cmake/src",
+  "command": "/usr/bin/c++  -DENABLE_DVPP_INTERFACE -I/home/user/Ascend/ascend-toolkit/20.0.RC1/acllib_centos7.6.x86_64/acllib/include -I/home/user/AscendProjects/sample-objectdetection/src/../inc -I/home/user/ascend_ddk/x86/include/opencv4    -std=c++11 -o CMakeFiles/main.dir/model_process.cpp.o -c /home/user/AscendProjects/sample-objectdetection/src/model_process.cpp",
+  "file": "/home/user/AscendProjects/sample-objectdetection/src/model_process.cpp"
+},
+{
+  "directory": "/home/user/AscendProjects/sample-objectdetection/build/cmake/src",
+  "command": "/usr/bin/c++  -DENABLE_DVPP_INTERFACE -I/home/user/Ascend/ascend-toolkit/20.0.RC1/acllib_centos7.6.x86_64/acllib/include -I/home/user/AscendProjects/sample-objectdetection/src/../inc -I/home/user/ascend_ddk/x86/include/opencv4    -std=c++11 -o CMakeFiles/main.dir/object_detect.cpp.o -c /home/user/AscendProjects/sample-objectdetection/src/object_detect.cpp",
+  "file": "/home/user/AscendProjects/sample-objectdetection/src/object_detect.cpp"
+},
+{
+  "directory": "/home/user/AscendProjects/sample-objectdetection/build/cmake/src",
+  "command": "/usr/bin/c++  -DENABLE_DVPP_INTERFACE -I/home/user/Ascend/ascend-toolkit/20.0.RC1/acllib_centos7.6.x86_64/acllib/include -I/home/user/AscendProjects/sample-objectdetection/src/../inc -I/home/user/ascend_ddk/x86/include/opencv4    -std=c++11 -o CMakeFiles/main.dir/dvpp_process.cpp.o -c /home/user/AscendProjects/sample-objectdetection/src/dvpp_process.cpp",
+  "file": "/home/user/AscendProjects/sample-objectdetection/src/dvpp_process.cpp"
+},
+{
+  "directory": "/home/user/AscendProjects/sample-objectdetection/build/cmake/src",
+  "command": "/usr/bin/c++  -DENABLE_DVPP_INTERFACE -I/home/user/Ascend/ascend-toolkit/20.0.RC1/acllib_centos7.6.x86_64/acllib/include -I/home/user/AscendProjects/sample-objectdetection/src/../inc -I/home/user/ascend_ddk/x86/include/opencv4    -std=c++11 -o CMakeFiles/main.dir/dvpp_cropandpaste.cpp.o -c /home/user/AscendProjects/sample-objectdetection/src/dvpp_cropandpaste.cpp",
+  "file": "/home/user/AscendProjects/sample-objectdetection/src/dvpp_cropandpaste.cpp"
+},
+{
+  "directory": "/home/user/AscendProjects/sample-objectdetection/build/cmake/src",
+  "command": "/usr/bin/c++  -DENABLE_DVPP_INTERFACE -I/home/user/Ascend/ascend-toolkit/20.0.RC1/acllib_centos7.6.x86_64/acllib/include -I/home/user/AscendProjects/sample-objectdetection/src/../inc -I/home/user/ascend_ddk/x86/include/opencv4    -std=c++11 -o CMakeFiles/main.dir/dvpp_jpegd.cpp.o -c /home/user/AscendProjects/sample-objectdetection/src/dvpp_jpegd.cpp",
+  "file": "/home/user/AscendProjects/sample-objectdetection/src/dvpp_jpegd.cpp"
+},
+{
+  "directory": "/home/user/AscendProjects/sample-objectdetection/build/cmake/src",
+  "command": "/usr/bin/c++  -DENABLE_DVPP_INTERFACE -I/home/user/Ascend/ascend-toolkit/20.0.RC1/acllib_centos7.6.x86_64/acllib/include -I/home/user/AscendProjects/sample-objectdetection/src/../inc -I/home/user/ascend_ddk/x86/include/opencv4    -std=c++11 -o CMakeFiles/main.dir/main.cpp.o -c /home/user/AscendProjects/sample-objectdetection/src/main.cpp",
+  "file": "/home/user/AscendProjects/sample-objectdetection/src/main.cpp"
+}
+]

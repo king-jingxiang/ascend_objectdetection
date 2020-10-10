@@ -1,0 +1,313 @@
+2020-10-10 08:00:10 - [INFO] [MindStudio] [Profiling] Start Profiling.
+2020-10-10 08:00:11 - [INFO] The remote host is connected.
+2020-10-10 08:00:14 - [INFO] No dump information is configured
+2020-10-10 08:00:14 - [INFO] Start synchronizing "/home/user/AscendProjects/sample-objectdetection/out/out.tar" to "~/HIAI_PROJECTS/workspace_mind_studio/sample-objectdetection_f9ca7367/out/" on the remote host.
+2020-10-10 08:00:15 - [INFO] Send compressed file success.
+2020-10-10 08:00:16 - [INFO] "/home/user/AscendProjects/sample-objectdetection/out/out.tar" has been synchronized to "~/HIAI_PROJECTS/workspace_mind_studio/sample-objectdetection_f9ca7367/out/" on the remote host.
+2020-10-10 08:00:17 - [INFO] Start synchronizing "/home/user/AscendProjects/sample-objectdetection/out/acl.json.tar" to "~/HIAI_PROJECTS/workspace_mind_studio/sample-objectdetection_f9ca7367/src/" on the remote host.
+2020-10-10 08:00:18 - [INFO] Send compressed file success.
+2020-10-10 08:00:19 - [INFO] "/home/user/AscendProjects/sample-objectdetection/out/acl.json.tar" has been synchronized to "~/HIAI_PROJECTS/workspace_mind_studio/sample-objectdetection_f9ca7367/src/" on the remote host.
+2020-10-10 08:00:19 - [INFO] Renaming "main" on the remote host to "workspace_mind_studio_sample-objectdetection".
+2020-10-10 08:00:20 - [INFO] Assigning execute permission to workspace_mind_studio_sample-objectdetection on the remote host.
+2020-10-10 08:00:22 - [INFO] The path "/home/user/AscendProjects/sample-objectdetection/data" of the same content is found on the remote host. No copy is needed.
+2020-10-10 08:00:23 - [INFO] The path "/home/user/AscendProjects/sample-objectdetection/model" of the same content is found on the remote host. No copy is needed.
+2020-10-10 08:00:23 [INFO] [MSVP] [11797] msvp_analyzer.pyc: start profiling collection...
+2020-10-10 08:00:23 [INFO] [MSVP] [11797] msvp_common.pyc: Send command and launch profiling ...
+2020-10-10 08:00:23 [INFO] [MSVP] [11797] msvp_common.pyc: Job ID is a69689be-0ace-11eb-8707-0255ac11031a
+2020-10-10 08:00:28 [INFO] [MSVP] [11797] msvp_common.pyc: APP execution finished.
+2020-10-10 08:00:28 [INFO] [MSVP] [11797] msvp_runss.pyc: Start parsing data...
+2020-10-10 08:00:28 [INFO] [MSVP] [11797] msvp_runss.pyc: It may take several minutes, please be patient...
+2020-10-10 08:00:28 [INFO] [MSVP] [11797] msvp_runss.pyc: Parse data finished.
+2020-10-10 08:00:28 [INFO] [MSVP] [11797] msvp_runss.pyc: Profiling execution status: finished.
+Profiling Results:
+Device 0:
+RunTime API:
+Name                 Stream ID      Time(%)    Time(ns)    Calls    Avg(ns)    Min(ns)    Max(ns)
+-------------------  -----------  ---------  ----------  -------  ---------  ---------  ---------
+DevBinaryRegister    N/A           0.027983      248295       82       3027       1467      27350
+DevBinaryUnRegister  N/A           0.002987       26503       82        323        279       1357
+FunctionRegister     N/A           0.019501      173034       82       2110       1131       7430
+KernelLaunch         517          22.408954   198833735       82    2424801     107223  185520999
+KernelFusionStart    517           0.000771        6845        1       6845       6845       6845
+KernelFusionEnd      517           0.000283        2514        1       2514       2514       2514
+StreamCreate         517           0.371784     3298825        6     549804     346524    1157659
+StreamDestroy        2147483647    0.027893      247497        6      41249       2347     213203
+StreamWaitEvent      516           0.000937        8310        4       2077       1901       2433
+StreamSynchronize    518           1.467859    13024249        7    1860607     287182    6539876
+EventCreate          N/A           0.000504        4469        1       4469       4469       4469
+EventDestroy         N/A           0.000289        2565        1       2565       2565       2565
+DevMalloc            N/A           3.354791    29766920      101     294721       1300   22097997
+DevFree              N/A           0.774177     6869241      101      68012       1086    3776608
+ManagedMemAlloc      N/A           0.007573       67194       82        819        545       5411
+ManagedMemFree       N/A           0.00329        29192       82        356        323       1869
+MemCopy              N/A           2.275754    20192676      259      77964       9373   16805919
+MemAsync             518           0.013843      122831       13       9448       6050      16296
+SetDevice            0            40.414844   358599273        1  358599273  358599273  358599273
+DeviceReset          0            22.439936   199108641        1  199108641  199108641  199108641
+ContextCreate        N/A           0.329401     2922762        1    2922762    2922762    2922762
+ContextDestroy       N/A           0.17685      1569179        1    1569179    1569179    1569179
+ModelCreate          N/A           0.048059      426429        1     426429     426429     426429
+ModelBindStream      517           0.015617      138566        1     138566     138566     138566
+ModelExecute         514           5.731131    50852095        2   25426047   25317312   25534783
+ModelUnbindStream    0             0.027414      243242        1     243242     243242     243242
+ModelDestroy         N/A           0.055079      488717        1     488717     488717     488717
+rtGetRunMode         N/A           0.002428       21542       18       1196        708       1709
+GetEventID           N/A           6.7e-05          598        1        598        598        598
+Task Scheduler Summary:
+  Time(%)    Time(ns)    Count    Avg(ns)    Min(ns)    Max(ns)    Waiting(ns)    Running(ns)    Pending(ns)  Type                 API                  Task  OP Name                        Stream    NPU
+---------  ----------  -------  ---------  ---------  ---------  -------------  -------------  -------------  -------------------  -----------------  ------  ---------------------------  --------  -----
+  16.7398    25342283        1   25342283   25342283   25342283          19843       25342283              0  model execute task   ModelExecute            0  N/A                               514      0
+  16.6408    25192448        1   25192448   25192448   25192448          14062       25192448              0  model execute task   ModelExecute            3  N/A                               514      0
+  12.7157    19250198        2    9625099    9560724    9689474              0       19250198              0  kernel AI core task  KernelLaunch           83  detection_out                     517      0
+   8.4814    12839993        2    6419996    6419059    6420934              0       12839993              0  kernel AI core task  KernelLaunch           82  mbox_conf_softmax                 517      0
+   4.453      6741396        2    3370698    3367182    3374214              0        6741396              0  kernel AI core task  KernelLaunch           80  conv4_3_norm_mbox_priorbox        517      0
+   4.2506     6434941        2    3217470    3149684    3285257              0        6434941              0  kernel AI core task  KernelLaunch           84  trans_Cast_130                    517      0
+   3.6419     5513435        1    5513435    5513435    5513435          44635        5513435              0  kernel AI cpu task   N/A                     0  N/A                               518      0
+   3.2758     4959159        2    2479579    2478537    2480622              0        4959159              0  kernel AI core task  KernelLaunch           81  mbox_priorbox                     517      0
+   1.8247     2762439        2    1381219    1379215    1383224              0        2762439              0  kernel AI core task  KernelLaunch            7  pool1                             517      0
+   1.6781     2540510        2    1270255    1269682    1270828              0        2540510              0  kernel AI core task  KernelLaunch           17  conv4_3relu4_3                    517      0
+   1.621      2454000        2    1227000    1223745    1230255              0        2454000              0  kernel AI core task  KernelLaunch           13  conv3_3relu3_3                    517      0
+   1.5326     2320147        2    1160073    1150361    1169786              0        2320147              0  kernel AI core task  KernelLaunch           79  fc7_mbox_priorbox                 517      0
+   1.4        2119470        2    1059735    1052703    1066767              0        2119470              0  kernel AI core task  KernelLaunch            9  conv2_2relu2_2                    517      0
+   1.3534     2048895        2    1024447    1021506    1027389              0        2048895              0  kernel AI core task  KernelLaunch            6  conv1_2relu1_2                    517      0
+   1.3474     2039886        2    1019943    1015360    1024526              0        2039886              0  kernel AI core task  KernelLaunch           36  trans_TransData_39                517      0
+   1.3405     2029418        2    1014709    1014162    1015256              0        2029418              0  kernel AI core task  KernelLaunch           35  conv4_3_norm/NormalizeScale       517      0
+   1.333      2018064        2    1009032    1006090    1011974              0        2018064              0  kernel AI core task  KernelLaunch           16  conv4_2relu4_2                    517      0
+   1.2521     1895510        2     947755     946089     949421              0        1895510              0  kernel AI core task  KernelLaunch           12  conv3_2relu3_2                    517      0
+   1.2444     1883896        2     941948     937807     946089              0        1883896              0  kernel AI core task  KernelLaunch           10  pool2                             517      0
+   1.1694     1770304        2     885152     877079     893225              0        1770304              0  kernel AI core task  KernelLaunch            8  conv2_1relu2_1                    517      0
+   0.9401     1423279        1    1423279    1423279    1423279          25779        1423279              0  kernel AI cpu task   N/A                     7  N/A                               518      0
+   0.8535     1292075        2     646037     644423     647652              0        1292075              0  kernel AI core task  StreamSynchronize      14  pool3                             517      0
+   0.8447     1278740        2     639370     637912     640828              0        1278740              0  kernel AI core task  KernelLaunch           18  pool4                             517      0
+   0.7158     1083688        2     541844     541766     541922              0        1083688              0  kernel AI core task  KernelLaunch           11  conv3_1relu3_1                    517      0
+   0.5632      852698        2     426349     425412     427286              0         852698              0  kernel AI core task  KernelLaunch           26  fc7relu7                          517      0
+   0.5386      815408        2     407704     399788     415620              0         815408              0  kernel AI core task  KernelLaunch           15  conv4_1relu4_1                    517      0
+   0.5264      796969        2     398484     384683     412286              0         796969              0  kernel AI core task  KernelLaunch            5  conv1_1relu1_1                    517      0
+   0.4658      705149        2     352574     351714     353435              0         705149              0  kernel AI core task  KernelLaunch           25  fc6relu6                          517      0
+   0.4231      640510        2     320255     320151     320359              0         640510              0  kernel AI core task  KernelLaunch           78  conv6_2_mbox_priorbox             517      0
+   0.3994      604626        2     302313     299735     304891              0         604626              0  kernel AI core task  KernelLaunch           22  conv5_2relu5_2                    517      0
+   0.3974      601552        2     300776     300255     301297              0         601552              0  kernel AI core task  KernelLaunch           23  conv5_3relu5_3                    517      0
+   0.3831      580043        2     290021     288902     291141              0         580043              0  kernel AI core task  KernelLaunch           21  conv5_1relu5_1                    517      0
+   0.3452      522542        2     261271     259629     262913              0         522542              0  kernel AI core task  KernelLaunch           20  conv4_3_norm/NormalizeSum         517      0
+   0.2602      393948        2     196974     196973     196975              0         393948              0  kernel AI core task  KernelLaunch           43  fc7_mbox_loc                      517      0
+   0.2499      378376        2     189188     188954     189422              0         378376              0  kernel AI core task  KernelLaunch           42  conv4_3_norm_mbox_conf_perm       517      0
+   0.2114      320041        2     160020     159993     160048              0         320041              0  kernel AI core task  KernelLaunch           41  trans_TransData_38                517      0
+   0.2103      318327        2     159163     157653     160674              0         318327              0  kernel AI core task  KernelLaunch            4  data_0_huawei_aipp                517      0
+   0.2021      305931        2     152965     152809     153122              0         305931              0  kernel AI core task  KernelLaunch           40  conv4_3_norm_mbox_conf            517      0
+   0.1997      302334        2     151167     149109     153225              0         302334              0  kernel AI core task  KernelLaunch           19  trans_TransData_31                517      0
+   0.1963      297129        2     148564     148226     148903              0         297129              0  kernel AI core task  KernelLaunch           24  pool5                             517      0
+   0.1855      280824        2     140412     132392     148432              0         280824              0  kernel AI core task  KernelLaunch           27  conv6_1conv6_1_relu               517      0
+   0.174       263384        1     263384     263384     263384          29840         263384              0  kernel AI cpu task   N/A                     2  N/A                               516      0
+   0.1366      206762        2     103381     102131     104631              0         206762              0  kernel AI core task  KernelLaunch           48  fc7_mbox_conf_perm                517      0
+   0.1353      204783        2     102391     102132     102651              0         204783              0  kernel AI core task  KernelLaunch           46  fc7_mbox_conf                     517      0
+   0.1342      203219        2     101609     100984     102235              0         203219              0  kernel AI core task  KernelLaunch           47  trans_TransData_62                517      0
+   0.1281      193954        1     193954     193954     193954          27913         193954              0  kernel AI cpu task   StreamSynchronize       9  N/A                               516      0
+   0.1084      164155        2      82077      75358      88797              0         164155              0  kernel AI core task  KernelLaunch           77  conv7_2_mbox_priorbox             517      0
+   0.0991      149990        2      74995      58068      91922              0         149990              0  kernel AI core task  KernelLaunch           28  conv6_2conv6_2_relu               517      0
+   0.0937      141868        2      70934      68903      72965              0         141868              0  kernel AI core task  KernelLaunch           49  conv6_2_mbox_loc                  517      0
+   0.0901      136403        1     136403     136403     136403          28748         136403              0  kernel AI cpu task   N/A                    15  N/A                               516      0
+Only first 50 items of Task Scheduler Summary data will be presented. More data can be viewed through the csv export function
+AI Core Metrics:
+Task    Stream    Op Name                      total_time(ms)    total_cycles    vec_ratio    mac_ratio    scalar_ratio    mte1_ratio    mte2_ratio    mte3_ratio    icache_miss_rate    memory_bound
+------  --------  -------------------------  ----------------  --------------  -----------  -----------  --------------  ------------  ------------  ------------  ------------------  --------------
+total   N/A       N/A                               44.852304        56060854     0.199459     0.284547        0.502355      0.131111      0.343034      0.092666            0.001605        1.205544
+4       517       data_0_huawei_aipp                 0.106885           72682     2.8e-05      0               0.004444      0.311714      0.332696      0.633334            0.016598    11882.000000
+4       517       data_0_huawei_aipp                 0.105193           71531     2.8e-05      0               0.004516      0.31673       0.336791      0.643707            0.012       12028.250000
+5       517       conv1_1relu1_1                     0.305694          415744     0.517605     0.51468         0.102104      0.229651      0.411888      0.929868            0.004325        0.795757
+5       517       conv1_1relu1_1                     0.281953          383456     0.562696     0.558017        0.10934       0.248999      0.553239      0.921835            0.004837        0.983193
+6       517       conv1_2relu1_2                     0.807575         1098302     0.205104     0.739745        0.210083      0.275957      0.401395      0.236993            0.000971        0.542613
+6       517       conv1_2relu1_2                     0.807564         1098287     0.205107     0.739883        0.210086      0.277502      0.399376      0.232652            0.001012        0.539783
+7       517       pool1                              0.489161          665259     0.210312     0               0.170107      0.327781      0.991881      0.110334            0.001494        4.716236
+7       517       pool1                              0.48659           661762     0.211423     0               0.171006      0.326122      0.992503      0.110939            0.001456        4.694395
+8       517       conv2_1relu2_1                     0.377877          513913     0.202309     0.793255        0.546404      0.258147      0.119551      0.258982            0.002658        0.150709
+8       517       conv2_1relu2_1                     0.377566          513490     0.202475     0.793908        0.548205      0.258605      0.119815      0.258395            0.00258         0.150918
+9       517       conv2_2relu2_2                     0.655386          891325     0.139146     0.911577        0.548238      0.331956      0.587558      0.159743            0.001599        0.644551
+9       517       conv2_2relu2_2                     0.657024          893552     0.137967     0.909384        0.547667      0.332479      0.59109       0.156183            0.001659        0.649989
+10      517       pool2                              0.211853          288120     0.234992     0               0.080994      0.318808      0.981799      0.129956            0.005768        4.178010
+10      517       pool2                              0.209962          285549     0.237108     0               0.08173       0.322176      0.982977      0.130044            0.006537        4.145693
+11      517       conv3_1relu3_1                     0.324263          440997     0.140563     0.920287        0.588993      0.379735      0.225373      0.161461            0.002223        0.244894
+11      517       conv3_1relu3_1                     0.324293          441038     0.14055      0.920048        0.588741      0.377754      0.250221      0.157077            0.002254        0.271965
+12      517       conv3_2relu3_2                     0.639948          870329     0.071237     0.932323        0.564955      0.38518       0.220741      0.101286            0.001342        0.236765
+12      517       conv3_2relu3_2                     0.636604          865782     0.071607     0.937147        0.567733      0.38605       0.214652      0.100536            0.001287        0.229048
+13      517       conv3_3relu3_3                     0.636551          865710     0.071604     0.937009        0.568261      0.358979      0.30575       0.076067            0.001287        0.326304
+13      517       conv3_3relu3_3                     0.634938          863516     0.071786     0.939311        0.569315      0.359368      0.302071      0.07605             0.001328        0.321588
+14      517       pool3                              0.065788           89472     0.566121     0               0.249911      0.724104      0.373033      0.208087            0.007084        0.658928
+14      517       pool3                              0.064937           88315     0.573221     0               0.251079      0.732605      0.365906      0.215105            0.006755        0.638333
+15      517       conv4_1relu4_1                     0.32721           445006     0.892577     0.94352         0.683407      0.66773       0.527867      0.05846             0.000449        0.559466
+15      517       conv4_1relu4_1                     0.327143          444914     0.892862     0.943769        0.683537      0.668277      0.529262      0.058258            0.000423        0.560796
+16      517       conv4_2relu4_2                     0.675306          918416     0.030058     0.914599        0.203136      0.278016      0.878263      0.031916            0.005002        0.960271
+16      517       conv4_2relu4_2                     0.674916          917886     0.030076     0.915302        0.202496      0.277821      0.85263       0.032796            0.005029        0.931529
+17      517       conv4_3relu4_3                     0.674573          917419     0.030091     0.915695        0.20324       0.281249      0.845912      0.031893            0.005094        0.923792
+17      517       conv4_3relu4_3                     0.675385          918524     0.030055     0.914741        0.202513      0.281851      0.845107      0.032073            0.005216        0.923876
+18      517       pool4                              0.048738           60760     0.426893     0               0.173239      0.464895      0.297515      0.136652            0.00771         0.696931
+18      517       pool4                              0.048491           60452     0.429068     0               0.174138      0.468719      0.296831      0.137498            0.006705        0.691804
+19      517       trans_TransData_31                 0.134372          182746     0.020006     0               0.423435      0             0.209805      0.422171            0.001777       10.487104
+19      517       trans_TransData_31                 0.133966          182194     0.020067     0               0.424696      0             0.207378      0.424372            0.001776       10.334280
+20      517       conv4_3_norm/NormalizeSum          0.148466          100957     0.961647     0               0.056767      0             0.18813       0.001793            0.002441        0.195633
+20      517       conv4_3_norm/NormalizeSum          0.148234          100799     0.963154     0               0.056389      0             0.188355      0.001796            0.002441        0.195561
+21      517       conv5_1relu5_1                     0.166286          226149     0.030635     0.939673        0.058404      0.311445      0.928958      0.029993            0.009202        0.988597
+21      517       conv5_1relu5_1                     0.166199          226030     0.030651     0.940654        0.058435      0.315268      0.929881      0.03                0.010227        0.988547
+22      517       conv5_2relu5_2                     0.167468          227756     0.030419     0.933433        0.057926      0.314367      0.928757      0.029896            0.009469        0.994991
+22      517       conv5_2relu5_2                     0.165386          224925     0.030801     0.944644        0.058655      0.312028      0.929612      0.030161            0.009462        0.984087
+23      517       conv5_3relu5_3                     0.169626          230691     0.030032     0.922238        0.057289      0.309592      0.929707      0.030842            0.010127        1.008099
+23      517       conv5_3relu5_3                     0.167608          227947     0.030393     0.932822        0.057978      0.313775      0.93037       0.030191            0.010659        0.997371
+24      517       pool5                              0.018096           24610     0.824705     0               0.128891      0             0.342991      0.299594            0.027397        0.415895
+24      517       pool5                              0.017888           24328     0.834265     0               0.130385      0             0.34598       0.303436            0.027397        0.414712
+25      517       fc6relu6                           0.330411          449359     0.030817     0.945491        0.043484      0.329236      0.865626      0.030216            0.005195        0.915531
+25      517       fc6relu6                           0.32969           448379     0.030885     0.947538        0.043454      0.331349      0.85721       0.030164            0.004962        0.904671
+26      517       fc7relu7                           0.107549          146266     0.106573     0.663394        0.086582      0.392579      0.871029      0.109048            0.009301        1.312989
+26      517       fc7relu7                           0.106948          145449     0.107172     0.667306        0.087027      0.397156      0.881794      0.112376            0.009141        1.321424
+27      517       conv6_1conv6_1_relu                0.034318           46673     0.087031     0.528764        0.067641      0.317614      0.809783      0.089902            0.01166         1.531464
+27      517       conv6_1conv6_1_relu                0.032724           44504     0.091273     0.555388        0.070937      0.333206      0.804489      0.094194            0.010615        1.448517
+28      517       conv6_2conv6_2_relu                0.054125           73610     0.027197     0.471213        0.062111      0.405488      0.912797      0.024086            0.014591        1.937122
+Only first 50 items of AI Core data will be presented. More data can be viewed through the csv export function
+GE task and graph info:
+OP Name                      Op Type            Task ID    Block Dim    Stream ID    Input Count  Input Formats              Input Shapes                              Input Data Types           Output Count  Output Formats    Output Shapes     Output Data Types
+---------------------------  ---------------  ---------  -----------  -----------  -------------  -------------------------  ----------------------------------------  -----------------------  --------------  ----------------  ----------------  -------------------
+data_0_huawei_aipp           Aipp                     4            1          517              1  NHWC                       "1,300,304,3"                             UINT8                                 1  NC1HWC0           "1,1,300,300,16"  FLOAT16
+conv1_1relu1_1               Conv2D                   5            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,1,300,300,16";"9,4,16,16";"64"         FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,4,300,300,16"  FLOAT16
+conv1_2relu1_2               Conv2D                   6            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,4,300,300,16";"36,4,16,16";"64"        FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,4,300,300,16"  FLOAT16
+pool1                        Pooling                  7            2          517              1  NC1HWC0                    "1,4,300,300,16"                          FLOAT16                               1  NC1HWC0           "1,4,150,150,16"  FLOAT16
+conv2_1relu2_1               Conv2D                   8            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,4,150,150,16";"36,8,16,16";"128"       FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,8,150,150,16"  FLOAT16
+conv2_2relu2_2               Conv2D                   9            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,8,150,150,16";"72,8,16,16";"128"       FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,8,150,150,16"  FLOAT16
+pool2                        Pooling                 10            2          517              1  NC1HWC0                    "1,8,150,150,16"                          FLOAT16                               1  NC1HWC0           "1,8,75,75,16"    FLOAT16
+conv3_1relu3_1               Conv2D                  11            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,8,75,75,16";"72,16,16,16";"256"        FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,16,75,75,16"   FLOAT16
+conv3_2relu3_2               Conv2D                  12            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,16,75,75,16";"144,16,16,16";"256"      FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,16,75,75,16"   FLOAT16
+conv3_3relu3_3               Conv2D                  13            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,16,75,75,16";"144,16,16,16";"256"      FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,16,75,75,16"   FLOAT16
+pool3                        Pooling                 14            6          517              1  NC1HWC0                    "1,16,75,75,16"                           FLOAT16                               1  NC1HWC0           "1,16,38,38,16"   FLOAT16
+conv4_1relu4_1               Conv2D                  15            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,16,38,38,16";"144,32,16,16";"512"      FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,32,38,38,16"   FLOAT16
+conv4_2relu4_2               Conv2D                  16            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,32,38,38,16";"288,32,16,16";"512"      FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,32,38,38,16"   FLOAT16
+conv4_3relu4_3               Conv2D                  17            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,32,38,38,16";"288,32,16,16";"512"      FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,32,38,38,16"   FLOAT16
+pool4                        Pooling                 18           11          517              1  NC1HWC0                    "1,32,38,38,16"                           FLOAT16                               1  NC1HWC0           "1,32,19,19,16"   FLOAT16
+trans_TransData_31           TransData               19            2          517              1  NC1HWC0                    "1,32,38,38,16"                           FLOAT16                               1  NCHW              "1,512,38,38"     FLOAT16
+conv4_3_norm/NormalizeSum    NormalizeSum            20            1          517              1  NCHW                       "1,512,38,38"                             FLOAT16                               1  NCHW              "1,1,38,38"       FLOAT
+conv5_1relu5_1               Conv2D                  21            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,32,19,19,16";"288,32,16,16";"512"      FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,32,19,19,16"   FLOAT16
+conv5_2relu5_2               Conv2D                  22            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,32,19,19,16";"288,32,16,16";"512"      FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,32,19,19,16"   FLOAT16
+conv5_3relu5_3               Conv2D                  23            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,32,19,19,16";"288,32,16,16";"512"      FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,32,19,19,16"   FLOAT16
+pool5                        Pooling                 24            2          517              1  NC1HWC0                    "1,32,19,19,16"                           FLOAT16                               1  NC1HWC0           "1,32,19,19,16"   FLOAT16
+fc6relu6                     Conv2D                  25            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,32,19,19,16";"288,64,16,16";"1024"     FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,64,19,19,16"   FLOAT16
+fc7relu7                     Conv2D                  26            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,64,19,19,16";"64,64,16,16";"1024"      FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,64,19,19,16"   FLOAT16
+conv6_1conv6_1_relu          Conv2D                  27            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,64,19,19,16";"64,16,16,16";"256"       FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,16,19,19,16"   FLOAT16
+conv6_2conv6_2_relu          Conv2D                  28            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,16,19,19,16";"144,32,16,16";"512"      FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,32,10,10,16"   FLOAT16
+conv7_1conv7_1_relu          Conv2D                  29            1          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,32,10,10,16";"32,8,16,16";"128"        FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,8,10,10,16"    FLOAT16
+conv7_2conv7_2_relu          Conv2D                  30            1          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,8,10,10,16";"72,16,16,16";"256"        FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,16,5,5,16"     FLOAT16
+conv8_1conv8_1_relu          Conv2D                  31            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,16,5,5,16";"16,8,16,16";"128"          FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,8,5,5,16"      FLOAT16
+conv8_2conv8_2_relu          Conv2D                  32            1          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,8,5,5,16";"72,16,16,16";"256"          FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,16,3,3,16"     FLOAT16
+conv9_1conv9_1_relu          Conv2D                  33            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,16,3,3,16";"16,8,16,16";"128"          FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,8,3,3,16"      FLOAT16
+conv9_2conv9_2_relu          FullyConnection         34            2          517              3  NC1HWC0;FRACTAL_Z;NC1HWC0  "1,8,3,3,16";"72,16,16,16";"1,16,1,1,16"  FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,16,1,1,16"     FLOAT16
+conv4_3_norm/NormalizeScale  NormalizeScale          35            2          517              3  NCHW;NCHW;NCHW             "1,512,38,38";"512";"1,1,38,38"           FLOAT16;FLOAT16;FLOAT                 1  NCHW              "1,512,38,38"     FLOAT16
+trans_TransData_39           TransData               36            2          517              1  NCHW                       "1,512,38,38"                             FLOAT16                               1  NC1HWC0           "1,32,38,38,16"   FLOAT16
+conv4_3_norm_mbox_loc        Conv2D                  37            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,32,38,38,16";"288,1,16,16";"16"        FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,1,38,38,16"    FLOAT16
+trans_TransData_43           TransData               38            2          517              1  NC1HWC0                    "1,1,38,38,16"                            FLOAT16                               1  NCHW              "1,16,38,38"      FLOAT16
+conv4_3_norm_mbox_loc_perm   TransposeD              39            2          517              1  FORMAT_ND                  "1,16,38,38"                              FLOAT16                               1  FORMAT_ND         "1,38,38,16"      FLOAT16
+conv4_3_norm_mbox_conf       Conv2D                  40            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,32,38,38,16";"288,6,16,16";"84"        FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,6,38,38,16"    FLOAT16
+trans_TransData_38           TransData               41            2          517              1  NC1HWC0                    "1,6,38,38,16"                            FLOAT16                               1  NCHW              "1,84,38,38"      FLOAT16
+conv4_3_norm_mbox_conf_perm  TransposeD              42            2          517              1  FORMAT_ND                  "1,84,38,38"                              FLOAT16                               1  FORMAT_ND         "1,38,38,84"      FLOAT16
+fc7_mbox_loc                 Conv2D                  43            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,64,19,19,16";"576,2,16,16";"24"        FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,2,19,19,16"    FLOAT16
+trans_TransData_66           TransData               44            2          517              1  NC1HWC0                    "1,2,19,19,16"                            FLOAT16                               1  NCHW              "1,24,19,19"      FLOAT16
+fc7_mbox_loc_perm            TransposeD              45            2          517              1  FORMAT_ND                  "1,24,19,19"                              FLOAT16                               1  FORMAT_ND         "1,19,19,24"      FLOAT16
+fc7_mbox_conf                Conv2D                  46            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,64,19,19,16";"576,8,16,16";"126"       FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,8,19,19,16"    FLOAT16
+trans_TransData_62           TransData               47            2          517              1  NC1HWC0                    "1,8,19,19,16"                            FLOAT16                               1  NCHW              "1,126,19,19"     FLOAT16
+fc7_mbox_conf_perm           TransposeD              48            2          517              1  FORMAT_ND                  "1,126,19,19"                             FLOAT16                               1  FORMAT_ND         "1,19,19,126"     FLOAT16
+conv6_2_mbox_loc             Conv2D                  49            1          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,32,10,10,16";"288,2,16,16";"24"        FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,2,10,10,16"    FLOAT16
+trans_TransData_80           TransData               50            2          517              1  NC1HWC0                    "1,2,10,10,16"                            FLOAT16                               1  NCHW              "1,24,10,10"      FLOAT16
+conv6_2_mbox_loc_perm        TransposeD              51            2          517              1  FORMAT_ND                  "1,24,10,10"                              FLOAT16                               1  FORMAT_ND         "1,10,10,24"      FLOAT16
+conv6_2_mbox_conf            Conv2D                  52            2          517              3  NC1HWC0;FRACTAL_Z;NCHW     "1,32,10,10,16";"288,8,16,16";"126"       FLOAT16;FLOAT16;FLOAT16               1  NC1HWC0           "1,8,10,10,16"    FLOAT16
+trans_TransData_76           TransData               53            2          517              1  NC1HWC0                    "1,8,10,10,16"                            FLOAT16                               1  NCHW              "1,126,10,10"     FLOAT16
+Only first 50 items of GE task and graph info data will be presented. More data can be viewed through the csv export function
+GE model load info:
+Model Name                           Model ID    Stream ID  Fusion Op                    Original Ops            Memory Input    Memory Output    Memory Weight    Memory Workspace    Memory Total    Task IDs
+---------------------------------  ----------  -----------  ---------------------------  --------------------  --------------  ---------------  ---------------  ------------------  --------------  ----------
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv1_1relu1_1               conv1_1,relu1_1              2898656         11520032            18624                   0        14437312           5
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv1_2relu1_2               conv1_2,relu1_2             11593952         11520032            73920                   0        23187904           6
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv2_1relu2_1               conv2_1,relu2_1              3027808          5760032           147776                   0         8935616           8
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv2_2relu2_2               conv2_2,relu2_2              6055264          5760032           295232                   0        12110528           9
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv3_1relu3_1               conv3_1,relu3_1              2030432          2880032           590400                   0         5500864          11
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv3_2relu3_2               conv3_2,relu3_2              4060256          2880032          1180224                   0         8120512          12
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv3_3relu3_3               conv3_3,relu3_3              4060256          2880032          1180224                   0         8120512          13
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv4_1relu4_1               conv4_1,relu4_1              3099744          1478688          2360384                   0         6938816          15
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv4_2relu4_2               conv4_2,relu4_2              6198368          1478688          4719680                   0        12396736          16
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv4_3relu4_3               conv4_3,relu4_3              6198368          1478688          4719680                   0        12396736          17
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv4_3_norm/NormalizeSum    conv4_3_norm                 1478688             5824                0                   0         1484512          20
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv5_1relu5_1               conv5_1,relu5_1              5089376           369696          4719680                   0        10178752          21
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv5_2relu5_2               conv5_2,relu5_2              5089376           369696          4719680                   0        10178752          22
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv5_3relu5_3               conv5_3,relu5_3              5089376           369696          4719680                   0        10178752          23
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  fc6relu6                     fc6,relu6                    9808992           739360          9439296                   0        19987648          25
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  fc7relu7                     fc7,relu7                    2838624           739360          2099264                   0         5677248          26
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv6_1conv6_1_relu          conv6_1,conv6_1_relu         1264224           184864           524864                   0         1973952          27
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv6_2conv6_2_relu          conv6_2,conv6_2_relu         2545248           102432          2360384                   0         5008064          28
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv7_1conv7_1_relu          conv7_1,conv7_1_relu          233824            25632           131392                   0          390848          29
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv7_2conv7_2_relu          conv7_2,conv7_2_relu          616032            12832           590400                   0         1219264          30
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv8_1conv8_1_relu          conv8_1,conv8_1_relu           78688             6432            65856                   0          150976          31
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv8_2conv8_2_relu          conv8_2,conv8_2_relu          596832             4640           590400                   0         1191872          32
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv9_1conv9_1_relu          conv9_1,conv9_1_relu           70496             2336            65856                   0          138688          33
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv9_2conv9_2_relu          conv9_2,conv9_2_relu          592736              544           590400                   0         1183680          34
+VGG_VOC0712_SSD_300x300_ft_deploy           1          517  conv4_3_norm/NormalizeScale  conv4_3_norm                 1485568          1478688             1056                   0         2965312          35
+GE model time info:
+Model Name                           Model ID    Data Index    Request ID    Input Start Time(ns)    Input End Time(ns)    Inference Start Time(ns)    Inference End Time(ns)    Output Start Time(ns)    Output End Time(ns)
+---------------------------------  ----------  ------------  ------------  ----------------------  --------------------  --------------------------  ------------------------  -----------------------  ---------------------
+VGG_VOC0712_SSD_300x300_ft_deploy           1             0             0           1104246153126         1104246213418               1104246214072             1104271753880            1104271754672          1104271755898
+VGG_VOC0712_SSD_300x300_ft_deploy           1             0             0           1104279769029         1104279818634               1104279819046             1104305140852            1104305141499          1104305143669
+ACL Module:
+Name                         Type      Time(ns)    Process ID        Thread ID
+---------------------------  ------  ----------  ------------  ---------------
+aclmdlLoadFromFileWithMem    model    302369894          3166  139787522886016
+aclmdlQuerySize              model     26548275          3166  139787522886016
+aclmdlExecute                model     25981767          3166  139787522886016
+ModelExecute                 model     25974245          3166  139787522886016
+aclmdlExecute                model     25400416          3166  139787522886016
+ModelExecute                 model     25393187          3166  139787522886016
+aclmdlUnload                 model      5416557          3166  139787522886016
+aclmdlGetDesc                model       132679          3166  139787522886016
+acldvppCreateChannelDesc     others    29717902          3166  139787522886016
+GetDvppKernelVersion         others     7339584          3166  139787522886016
+acldvppCreateChannel         others     2120959          3166  139787522886016
+acldvppDestroyChannel        others     1507400          3166  139787522886016
+acldvppMalloc                others      233379          3166  139787522886016
+acldvppDestroyChannelDesc    others      232025          3166  139787522886016
+acldvppFree                  others      205397          3166  139787522886016
+acldvppFree                  others      198217          3166  139787522886016
+acldvppFree                  others      192578          3166  139787522886016
+acldvppVpcCropAndPasteAsync  others      117018          3166  139787522886016
+acldvppVpcCropAndPasteAsync  others       99560          3166  139787522886016
+acldvppJpegDecodeAsync       others       97672          3166  139787522886016
+acldvppCreatePicDesc         others       88440          3166  139787522886016
+acldvppJpegDecodeAsync       others       81693          3166  139787522886016
+acldvppCreatePicDesc         others       78478          3166  139787522886016
+acldvppMalloc                others       75787          3166  139787522886016
+acldvppCreatePicDesc         others       74542          3166  139787522886016
+acldvppCreatePicDesc         others       74138          3166  139787522886016
+acldvppCreatePicDesc         others       74105          3166  139787522886016
+acldvppCreatePicDesc         others       72547          3166  139787522886016
+acldvppJpegGetImageInfo      others       14047          3166  139787522886016
+acldvppDestroyPicDesc        others        9983          3166  139787522886016
+acldvppDestroyPicDesc        others        9017          3166  139787522886016
+acldvppDestroyPicDesc        others        8855          3166  139787522886016
+acldvppDestroyPicDesc        others        8396          3166  139787522886016
+acldvppDestroyPicDesc        others        6453          3166  139787522886016
+acldvppDestroyPicDesc        others        6289          3166  139787522886016
+acldvppFree                  others        5667          3166  139787522886016
+acldvppFree                  others        5622          3166  139787522886016
+acldvppJpegGetImageInfo      others        5467          3166  139787522886016
+acldvppJpegPredictDecSize    others        5389          3166  139787522886016
+acldvppMalloc                others        5106          3166  139787522886016
+acldvppMalloc                others        5095          3166  139787522886016
+acldvppJpegPredictDecSize    others        3753          3166  139787522886016
+acldvppMalloc                others        3572          3166  139787522886016
+acldvppFree                  others        3372          3166  139787522886016
+acldvppMalloc                others        3177          3166  139787522886016
+acldvppFree                  others        3027          3166  139787522886016
+acldvppCreateRoiConfig       others        1719          3166  139787522886016
+acldvppCreateRoiConfig       others        1537          3166  139787522886016
+acldvppDestroyRoiConfig      others        1229          3166  139787522886016
+acldvppCreateRoiConfig       others        1187          3166  139787522886016
+Only first 50 items of ACL Module data will be presented. More data can be viewed through the csv export function
+More app run info could be found in /home/user/.mindstudio/profiler/data/profiling_out/app.log
+2020-10-10 08:00:29 - [INFO] [MindStudio] [Profiling] Succeed to parse timeline data to /home/user/AscendProjects/sample-objectdetection/profiling/timeline_acl_0.json!
+2020-10-10 08:00:29 - [INFO] [MindStudio] [Profiling] Succeed to parse timeline data to /home/user/AscendProjects/sample-objectdetection/profiling/timeline_ge_0.json!
+2020-10-10 08:00:29 - [INFO] [MindStudio] [Profiling] Succeed to parse timeline data to /home/user/AscendProjects/sample-objectdetection/profiling/timeline_ts_0.json!
+2020-10-10 08:00:29 - [INFO] [MindStudio] [Profiling] Succeed to parse timeline data to /home/user/AscendProjects/sample-objectdetection/profiling/timeline_runtime_0.json!
+2020-10-10 08:00:29 - [INFO] [MindStudio] [Profiling] Succeed to parse Runtime summary to /home/user/AscendProjects/sample-objectdetection/profiling/summary_runtime_0.json!
+2020-10-10 08:00:29 - [INFO] [MindStudio] [Profiling] Succeed to parse Task Scheduling summary to /home/user/AscendProjects/sample-objectdetection/profiling/summary_ts_0.json!
+2020-10-10 08:00:29 - [INFO] [MindStudio] [Profiling] Succeed to parse AI Core Metrics summary to /home/user/AscendProjects/sample-objectdetection/profiling/summary_aicore_0.json!
+2020-10-10 08:00:30 - [INFO] [MindStudio] [Profiling] End Profiling.

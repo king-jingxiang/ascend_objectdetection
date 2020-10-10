@@ -1,0 +1,41 @@
+2020-10-10 07:52:55 [ INFO ] Build command: 
+2020-10-10 07:52:55 [ INFO ] export DDK_PATH=/home/user/Ascend/ascend-toolkit/20.0.RC1/acllib_centos7.6.x86_64 && export NPU_HOST_LIB=/home/user/Ascend/ascend-toolkit/20.0.RC1/acllib_centos7.6.x86_64/acllib/lib64/stub && export LANG="C" && cd /home/user/AscendProjects/sample-objectdetection/build/intermediates && rm -rf * && /home/user/MindStudio-ubuntu/tools/cmake/bin/cmake /home/user/AscendProjects/sample-objectdetection -DCMAKE_SKIP_RPATH=TRUE -Dtarget= -DCMAKE_CXX_COMPILER=g++-7 && make && echo sample-objectdetection build successfully.
+2020-10-10 07:52:55 [ INFO ] -- The C compiler identification is GNU 7.5.0
+2020-10-10 07:52:55 [ INFO ] -- The CXX compiler identification is GNU 7.5.0
+2020-10-10 07:52:55 [ INFO ] -- Check for working C compiler: /usr/bin/cc
+2020-10-10 07:52:55 [ INFO ] -- Check for working C compiler: /usr/bin/cc -- works
+2020-10-10 07:52:55 [ INFO ] -- Detecting C compiler ABI info
+2020-10-10 07:52:56 [ INFO ] -- Detecting C compiler ABI info - done
+2020-10-10 07:52:56 [ INFO ] -- Detecting C compile features
+2020-10-10 07:52:56 [ INFO ] -- Detecting C compile features - done
+2020-10-10 07:52:56 [ INFO ] -- Check for working CXX compiler: /usr/bin/g++-7
+2020-10-10 07:52:56 [ INFO ] -- Check for working CXX compiler: /usr/bin/g++-7 -- works
+2020-10-10 07:52:56 [ INFO ] -- Detecting CXX compiler ABI info
+2020-10-10 07:52:56 [ INFO ] -- Detecting CXX compiler ABI info - done
+2020-10-10 07:52:56 [ INFO ] -- Detecting CXX compile features
+2020-10-10 07:52:56 [ INFO ] -- Detecting CXX compile features - done
+2020-10-10 07:52:56 [ INFO ] -- env INC_PATH: /home/user/Ascend/ascend-toolkit/20.0.RC1/acllib_centos7.6.x86_64
+2020-10-10 07:52:56 [ INFO ] -- env LIB_PATH: /home/user/Ascend/ascend-toolkit/20.0.RC1/acllib_centos7.6.x86_64/acllib/lib64/stub
+2020-10-10 07:52:56 [ INFO ] -- Configuring done
+2020-10-10 07:52:56 [ INFO ] -- Generating done
+2020-10-10 07:52:56 [ INFO ] -- Build files have been written to: /home/user/AscendProjects/sample-objectdetection/build/intermediates
+2020-10-10 07:52:56 [ INFO ] Scanning dependencies of target main
+2020-10-10 07:52:56 [ INFO ] [ 12%] Building CXX object src/CMakeFiles/main.dir/utils.cpp.o
+2020-10-10 07:52:58 [ INFO ] [ 25%] Building CXX object src/CMakeFiles/main.dir/model_process.cpp.o
+2020-10-10 07:53:00 [ INFO ] [ 37%] Building CXX object src/CMakeFiles/main.dir/object_detect.cpp.o
+2020-10-10 07:53:01 [ INFO ] [ 50%] Building CXX object src/CMakeFiles/main.dir/dvpp_process.cpp.o
+2020-10-10 07:53:03 [ INFO ] [ 62%] Building CXX object src/CMakeFiles/main.dir/dvpp_cropandpaste.cpp.o
+2020-10-10 07:53:04 [ INFO ] [ 75%] Building CXX object src/CMakeFiles/main.dir/dvpp_jpegd.cpp.o
+2020-10-10 07:53:06 [ INFO ] [ 87%] Building CXX object src/CMakeFiles/main.dir/main.cpp.o
+2020-10-10 07:53:08 [ INFO ] [100%] Linking CXX executable ../../../out/main
+2020-10-10 07:53:08 [ INFO ] [100%] Built target main
+2020-10-10 07:53:08 [ INFO ] sample-objectdetection build successfully.
+2020-10-10 07:56:03 [ INFO ] Build command: 
+2020-10-10 07:56:03 [ INFO ] export DDK_PATH=/home/user/Ascend/ascend-toolkit/20.0.RC1/acllib_centos7.6.x86_64 && export NPU_HOST_LIB=/home/user/Ascend/ascend-toolkit/20.0.RC1/acllib_centos7.6.x86_64/acllib/lib64/stub && export LANG="C" && cd /home/user/AscendProjects/sample-objectdetection/build/intermediates && /home/user/MindStudio-ubuntu/tools/cmake/bin/cmake /home/user/AscendProjects/sample-objectdetection -DCMAKE_SKIP_RPATH=TRUE -Dtarget= -DCMAKE_CXX_COMPILER=g++-7 && make && echo sample-objectdetection build successfully.
+2020-10-10 07:56:03 [ INFO ] -- env INC_PATH: /home/user/Ascend/ascend-toolkit/20.0.RC1/acllib_centos7.6.x86_64
+2020-10-10 07:56:03 [ INFO ] -- env LIB_PATH: /home/user/Ascend/ascend-toolkit/20.0.RC1/acllib_centos7.6.x86_64/acllib/lib64/stub
+2020-10-10 07:56:03 [ INFO ] -- Configuring done
+2020-10-10 07:56:03 [ INFO ] -- Generating done
+2020-10-10 07:56:03 [ INFO ] -- Build files have been written to: /home/user/AscendProjects/sample-objectdetection/build/intermediates
+2020-10-10 07:56:03 [ INFO ] [100%] Built target main
+2020-10-10 07:56:03 [ INFO ] sample-objectdetection build successfully.
